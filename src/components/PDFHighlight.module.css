@@ -1,0 +1,43 @@
+.highlight {
+  position: absolute;
+  border: 2px solid rgba(255, 0, 0, 0.7);
+  background-color: rgba(255, 0, 0, 0.1);
+  pointer-events: all;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  will-change: transform;
+  z-index: 1;
+}
+
+.highlight.hovered {
+  border-color: rgba(255, 0, 0, 1);
+  background-color: rgba(255, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.highlight.selected {
+  border-color: rgba(0, 0, 255, 1);
+  background-color: rgba(0, 0, 255, 0.2);
+  z-index: 1;
+}
+
+.tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+.highlight:hover .tooltip {
+  opacity: 1;
+} 

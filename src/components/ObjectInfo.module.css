@@ -1,0 +1,58 @@
+.container {
+  padding: 16px;
+}
+
+.emptyState {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.section h3 {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.infoRow {
+  display: flex;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.infoRow span:first-child {
+  width: 60px;
+  color: #666;
+  flex-shrink: 0;
+}
+
+.refList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.refButton {
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  color: #495057;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.refButton:hover {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+} 
